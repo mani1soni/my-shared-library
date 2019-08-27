@@ -1,5 +1,5 @@
 def call(){
-     post {
+    post {
         success {
             emailext attachLog: true, 
             body: '''success''', 
