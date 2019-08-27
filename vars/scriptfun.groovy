@@ -1,4 +1,4 @@
 def call(NAME){
-    bash "name.sh '${NAME}'"  
+    sh "name.sh '${NAME}'"  
 }
 return this.&call(NAME)
