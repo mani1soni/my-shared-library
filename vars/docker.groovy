@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
-def call(){
-    sh 'docker run -d --name test ubuntu'   
+#!/usr/bin/env groovy
+def call(CONTAINER,IMAGE){
+   sh "sudo docker run -itd --name '${CONTAINER}' '${IMAGE}'"
 }
-return [
-    call: this.&call
-]
+return this
+
