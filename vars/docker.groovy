@@ -2,5 +2,5 @@
 def call(CONTAINER,IMAGE){
    sh "sudo docker run -itd --name '${CONTAINER}' '${IMAGE}'"
 }
-return this.&call(CONTAINER,IMAGE)
+return this
 
